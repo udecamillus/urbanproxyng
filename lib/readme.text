@@ -1,0 +1,27 @@
+############################################################## 
+This is a function usage instruction,
+All function used by php form all proceses are analized here
+please check 'helper.inc.php' for all the listed functions 
+##############################################################
+
+
+
+###### simple actions ######
+----------------------------
+dnd       => dumps any form of data 
+setAlert  => creates php alert and hold it
+showAlert => displays php alart on any page
+
+
+###### Sessions ######
+----------------------
+setSession   => creates a session 
+checkSession => checks if a session is set
+unsetSession => removes any perticuler session
+
+
+###### Validation ######
+------------------------
+emptyField    => checks for empty fields
+sanitizeInput => removes html characters from inputs
+validateEmail => checks if email is good 

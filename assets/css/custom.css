@@ -1,0 +1,14 @@
+.login-side {
+    overflow: scroll;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.login-side::-webkit-scrollbar {
+    display: none;
+}
+
+.loader {
+    display: none;
+}
