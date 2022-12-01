@@ -1,7 +1,7 @@
 <?php
 session_start();
-define('SITE_NAME', 'ESTATE');
-define('ROOT', '/estate/'); //change to / when online.
+define('SITE_NAME', 'Urbanproxyng');
+define('ROOT', '/urbanproxyng/'); //change to / when online.
 define('DR_ROOT', dirname(__FILE__));
 define('DS', DIRECTORY_SEPARATOR);
 define('LOGO','LUNO');

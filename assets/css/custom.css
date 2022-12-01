@@ -12,3 +12,15 @@
 .loader {
     display: none;
 }
+
+.btn-st {
+    background: linear-gradient(120deg, #00AC9A, #2794EB);
+    color: #ffffff;
+    transition: all .4s;
+    font-size: 16px;
+}
+
+.btn-st:hover {
+    box-shadow: inset 1px 1px 5px 0px #000000, 1px 1px 5px 0px #000000;
+    color: #ffffff;
+}

@@ -10,8 +10,8 @@ require_once('../app.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="description" content="Responsive Bootstrap 5 admin template and web Application ui kit.">
     <meta name="keyword" content="LUNO, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme, HRMS, Projects"> -->
-    <title>:: MANAGEMENT ::</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title><?= SITE_NAME . ' | ' . $page_title ?></title>
+    <link rel="shortcut icon" href="<?= ROOT ?>uploads/favicon.png" type="image/x-icon">
     <!-- Favicon-->
 
     <!-- plugin css file  -->
@@ -20,4 +20,5 @@ require_once('../app.php');
 
     <!-- project css file  -->
     <link rel="stylesheet" href="<?= ROOT ?>assets/css/luno.style.min.css">
+    <link rel="stylesheet" href="<?= ROOT ?>assets/css/custom.css">
 </head>
