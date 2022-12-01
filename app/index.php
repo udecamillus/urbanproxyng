@@ -4,6 +4,7 @@ $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'], 
 
 //  require_once("401.php");die;
 
+var_dump($url);
 if (empty($url[0])) {
   $url[0] = 'home';
 }

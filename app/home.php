@@ -1,5 +1,6 @@
-<?php require_once(APP_HEADER); 
-    secureUser();
+<?php 
+require_once(APP_HEADER);
+secureUser();
 ?>
 
 <body class="layout-1" data-luno="theme-blue">
@@ -341,9 +342,9 @@
 
     <?php require_once(APP_MODAL);
     require_once(APP_SCRIPT);
-     ?>
+    ?>
 
-   
+
 
 </body>
 
