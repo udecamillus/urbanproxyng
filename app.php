@@ -1,10 +1,13 @@
 <?php
 session_start();
 define('SITE_NAME', 'Urbanproxyng');
+define('SITE_URL','https://www.urbanproxyng.com');
 define('ROOT', '/urbanproxyng/'); //change to / when online.
 define('DR_ROOT', dirname(__FILE__));
 define('DS', DIRECTORY_SEPARATOR);
-define('LOGO','LUNO');
+define('LOGO',ROOT.'uploads/logo.png');
+define('ICON', ROOT . 'uploads/favicon.png');
+define('LOGOTEXT', ROOT . 'uploads/logo_text.png');
 
 // MANAGEMENT
 define('MG_ROOT', ROOT . 'management/'); //management root.

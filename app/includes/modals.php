@@ -1,4 +1,4 @@
-<!-- Modal: Create project -->
+<!-- 
 <div class="modal fade" id="CreateNew" tabindex="-1">
     <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable">
         <div class="modal-content rounded-0">
@@ -22,7 +22,7 @@
                             <div class="card-body">
                                 <h6 class="card-title mb-1">Project Type</h6>
                                 <p class="text-muted small">If you need more info, please check out <a href="#">FAQ Page</a></p>
-                                <!-- Custome redio input -->
+                                
                                 <div class="c_radio d-flex flex-md-wrap">
                                     <label class="m-1 w-100" for="Personal">
                                         <input type="radio" name="plan" id="Personal" checked />
@@ -293,7 +293,7 @@
     </div>
 </div>
 
-<!-- Modal: Schedule -->
+
 <div class="modal fade" id="ScheduleModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable">
         <div class="modal-content">
@@ -303,8 +303,8 @@
             </div>
             <div class="modal-body custom_scroll">
                 <div class="ps-2">
-                    <!--Timeline item-->
-                    <div class="timeline-item ti-primary p-3">
+                    
+                <div class="timeline-item ti-primary p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-phone"></i>
                         </div>
@@ -313,7 +313,7 @@
                             <small class="text-muted">Today - 11:32am</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-info p-3">
                         <div class="timeline-icon">
                             <img class="avatar sm rounded-circle" src="<?= ROOT ?>assets/images/xs/avatar1.jpg" alt="">
@@ -323,7 +323,7 @@
                             <small class="text-muted">Today - 12:50pm</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-danger p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-comment"></i>
@@ -333,7 +333,7 @@
                             <small class="text-muted">Today - 01:35pm</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-danger p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-phone"></i>
@@ -343,7 +343,7 @@
                             <small class="text-muted">Today - 02:40pm</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-primary p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-smile-o"></i>
@@ -353,7 +353,7 @@
                             <small class="text-muted">Today - 03:15pm</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-warning p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-phone"></i>
@@ -363,7 +363,7 @@
                             <small class="text-muted">Today - 05:40pm</small>
                         </div>
                     </div>
-                    <!--Timeline item-->
+                    
                     <div class="timeline-item ti-success p-3">
                         <div class="avatar sm rounded-circle no-thumbnail">
                             <i class="fa fa-leaf"></i>
@@ -379,7 +379,7 @@
     </div>
 </div>
 
-<!-- Modal: my notes -->
+
 <div class="modal fade" id="MynotesModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable">
         <div class="modal-content">
@@ -551,7 +551,7 @@
     </div>
 </div>
 
-<!-- Modal: RecentChat -->
+
 <div class="modal fade" id="RecentChat" tabindex="-1">
     <div class="modal-dialog modal-dialog-vertical modal-dialog-scrollable">
         <div class="modal-content">
@@ -595,8 +595,8 @@
                 <div class="tab-content shadow-sm">
                     <div class="tab-pane fade show active" id="c-user-1" role="tabpanel">
                         <div class="card border-0">
-                            <!-- start: chat header -->
-                            <div class="card-header border-bottom py-3">
+                            
+                        <div class="card-header border-bottom py-3">
                                 <div class="d-flex">
                                     <a href="javascript:void(0);" title="">
                                         <img class="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="avatar">
@@ -621,11 +621,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!-- start: chat body -->
+                            
                             <div class="card-body custom_scroll" style="height: calc(100vh - 141px);">
                                 <ul class="list-unstyled chat-history flex-grow-1">
-                                    <!-- Chat: left -->
-                                    <li class="mb-3 d-flex flex-row align-items-end">
+                                    
+                                <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
                                                 <img class="avatar xs rounded-circle me-1" src="assets/images/xs/avatar1.jpg" alt="avatar">
@@ -635,7 +635,7 @@
                                                 <div class="message"> Hi Aiden, how are you?</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -645,7 +645,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: right -->
+                                    
                                     <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
@@ -655,7 +655,7 @@
                                                 <div class="message">Are we meeting today?</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -665,7 +665,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -676,7 +676,7 @@
                                                 <div class="message"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -686,7 +686,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -697,7 +697,7 @@
                                                 <div class="message"> Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -707,7 +707,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: right -->
+                                    
                                     <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
@@ -717,7 +717,7 @@
                                                 <div class="message">Yes, Orlando Allredy done <br> There are many variations of passages of Lorem Ipsum available</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -727,7 +727,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -742,7 +742,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -752,7 +752,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: right -->
+                                    
                                     <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
@@ -762,7 +762,7 @@
                                                 <div class="message">Okay, will check and let you know.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -774,7 +774,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- start: chat footer -->
+                            
                             <div class="card-footer border-top bg-transparent py-3 px-4">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Enter text here...">
@@ -785,8 +785,8 @@
                     </div>
                     <div class="tab-pane fade show active" id="c-user-2" role="tabpanel">
                         <div class="card border-0">
-                            <!-- start: chat header -->
-                            <div class="card-header border-bottom py-3">
+                            
+                        <div class="card-header border-bottom py-3">
                                 <div class="d-flex">
                                     <a href="javascript:void(0);" title="">
                                         <img class="avatar rounded-circle" src="assets/images/xs/avatar2.jpg" alt="avatar">
@@ -811,11 +811,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!-- start: chat body -->
+                            
                             <div class="card-body custom_scroll" style="height: calc(100vh - 141px);">
                                 <ul class="list-unstyled chat-history flex-grow-1">
-                                    <!-- Chat: right -->
-                                    <li class="mb-3 d-flex flex-row-reverse align-items-end">
+                                    
+                                <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
                                                 <span class="text-muted small">10:12 AM, Today</span>
@@ -824,7 +824,7 @@
                                                 <div class="message">Are we meeting today?</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -834,7 +834,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -845,7 +845,7 @@
                                                 <div class="message"> Hi Aiden, how are you?</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -855,7 +855,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: right -->
+                                    
                                     <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
@@ -865,7 +865,7 @@
                                                 <div class="message">Yes, Orlando Allredy done <br> There are many variations of passages of Lorem Ipsum available</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -875,7 +875,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -890,7 +890,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -900,7 +900,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: right -->
+                                    
                                     <li class="mb-3 d-flex flex-row-reverse align-items-end">
                                         <div class="max-width-70 text-end">
                                             <div class="user-info mb-1">
@@ -910,7 +910,7 @@
                                                 <div class="message">Okay, will check and let you know.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -920,7 +920,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -931,7 +931,7 @@
                                                 <div class="message"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -941,7 +941,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <!-- Chat: left -->
+                                    
                                     <li class="mb-3 d-flex flex-row align-items-end">
                                         <div class="max-width-70">
                                             <div class="user-info mb-1">
@@ -952,7 +952,7 @@
                                                 <div class="message"> Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
                                             </div>
                                         </div>
-                                        <!-- More option -->
+                                        
                                         <div class="btn-group">
                                             <a href="#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu rounded-4 border-0 shadow">
@@ -964,7 +964,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- start: chat footer -->
+                            
                             <div class="card-footer border-top bg-transparent py-3 px-4">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Enter text here...">
@@ -980,7 +980,7 @@
     </div>
 </div>
 
-<!-- Modal: Setting -->
+
 <div class="modal fade" id="SettingsModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-vertical right-side modal-dialog-scrollable">
         <div class="modal-content">
@@ -990,8 +990,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="px-xl-4 modal-body custom_scroll">
-                <!-- start: color setting -->
-                <div class="card fieldset border border-primary p-3 setting-theme mb-4">
+                
+            <div class="card fieldset border border-primary p-3 setting-theme mb-4">
                     <span class="fieldset-tile text-primary bg-card">Color Settings</span>
                     <ul class="list-unstyled d-flex choose-skin mb-0">
                         <li data-theme="black">
@@ -1022,7 +1022,7 @@
                             <div class="dynamic"><i class="fa fa-paint-brush"></i></div>
                         </li>
                     </ul>
-                    <!-- Settings: Theme dynamics -->
+                    
                     <div class="card fieldset border border-primary p-3 dt-setting mt-4">
                         <span class="fieldset-tile text-primary bg-card">Dynamic Color Settings</span>
                         <div class="row g-3">
@@ -1077,7 +1077,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- start: Light/dark -->
+                
                 <div class="card fieldset border setting-mode mb-4">
                     <span class="fieldset-tile bg-card">Light/Dark & Contrast Layout</span>
                     <div class="c_radio d-flex text-center">
@@ -1107,7 +1107,7 @@
                         </label>
                     </div>
                 </div>
-                <!-- start: Font setting -->
+                
                 <div class="card fieldset border setting-font mb-4">
                     <span class="fieldset-tile bg-card">Google Font Settings</span>
                     <div class="c_radio d-flex text-center font_setting">
@@ -1137,46 +1137,46 @@
                         </label>
                     </div>
                 </div>
-                <!-- start: Extra setting -->
+                
                 <div class="setting-more mb-4">
                     <h6 class="card-title">More Setting</h6>
                     <ul class="list-group list-group-flush list-group-custom fs-6">
-                        <!-- Settings: Horizontal menu version -->
-                        <li class="list-group-item">
+                        
+                    <li class="list-group-item">
                             <div class="form-check form-switch h-menu-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="h_menu">
                                 <label class="form-check-label" for="h_menu">Horizontal Menu Version</label>
                             </div>
                         </li>
-                        <!-- Settings: page header top Fix -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch pageheader-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="PageHeader" checked>
                                 <label class="form-check-label" for="PageHeader">Page Header Fix</label>
                             </div>
                         </li>
-                        <!-- Settings: page header Dark version  -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch pageheader-dark-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="PageHeader_dark">
                                 <label class="form-check-label" for="PageHeader_dark">Page Header Dark Mode</label>
                             </div>
                         </li>
-                        <!-- Settings: Border radius -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch radius-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="BorderRadius">
                                 <label class="form-check-label" for="BorderRadius">Border Radius none</label>
                             </div>
                         </li>
-                        <!-- Settings: sidebar dark -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch sidebardark-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="SidebarDark">
                                 <label class="form-check-label" for="SidebarDark">Enable Dark! ( Sidebar )</label>
                             </div>
                         </li>
-                        <!-- Settings: Sidebar bg image -->
+                        
                         <li class="list-group-item">
                             <div class="setting-img">
                                 <div class="form-check form-switch imagebg-switch mb-1">
@@ -1204,14 +1204,14 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- Settings: Container Fluid -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch fluid-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="fluidLayout" checked="">
                                 <label class="form-check-label" for="fluidLayout">Container Fluid</label>
                             </div>
                         </li>
-                        <!-- Settings: Card box shadow  -->
+                        
                         <li class="list-group-item">
                             <div class="form-check form-switch shadow-switch mb-1">
                                 <input class="form-check-input" type="checkbox" id="card_shadow">
@@ -1228,4 +1228,4 @@
 
         </div>
     </div>
-</div>
+</div> -->

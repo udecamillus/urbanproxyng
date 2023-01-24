@@ -1,6 +1,3 @@
-<?php
-require_once('../app.php');
-?>
 <!doctype html>
 <html class="no-js " lang="en">
 
@@ -20,5 +17,12 @@ require_once('../app.php');
 
     <!-- project css file  -->
     <link rel="stylesheet" href="<?= ROOT ?>assets/css/luno.style.min.css">
+    <link rel="stylesheet" href="<?= ROOT ?>assets/icofont/icofont.min.css">
     <link rel="stylesheet" href="<?= ROOT ?>assets/css/custom.css">
+    <link rel="stylesheet" href="<?= ROOT ?>assets/css/iziToast.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 </head>

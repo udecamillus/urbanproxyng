@@ -8,6 +8,14 @@
 
  <!-- Jquery Page Js -->
  <script src="<?= ROOT ?>assets/js/page/dashboard.js"></script>
+
+ <script src="<?= ROOT ?>assets/js/custom.js"></script>
+ <script src="<?= ROOT ?>assets/js/iziToast.min.js"></script>
+
+ <script>
+     <?= showAlert(); ?>
+ </script>
+
  <script>
      // date range picker
      $(function() {

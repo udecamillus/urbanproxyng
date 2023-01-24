@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 .login-side {
     overflow: scroll;
     height: 100vh;
@@ -18,9 +19,117 @@
     color: #ffffff;
     transition: all .4s;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .btn-st:hover {
     box-shadow: inset 1px 1px 5px 0px #000000, 1px 1px 5px 0px #000000;
     color: #ffffff;
+}
+
+.m-link span i {
+    color: #00AC9A;
+    font-size: 22px;
+}
+
+.card-icon {
+    color: #2794EB;
+    font-size: 32px;
+}
+
+.card-link {
+    width: 100%;
+    color: #464545;
+}
+
+.card-link .card {
+    transition: all .5s;
+}
+
+.card-link:hover>.card {
+    color: #00AC9A;
+    box-shadow: 3px 7px 5px 0px #46454536;
+}
+
+.bg-main {
+    background: #00AC9A !important;
+}
+
+.text-main {
+    color: #00AC9A !important;
+}
+
+.btn-action {
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #00AC9A;
+    transition: all .5s;
+}
+
+.btn-action h2,
+.btn-action small {
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+.btn-action h2 {
+    font-size: 22px;
+    padding-top: 10px;
+    color: #00AC9A;
+}
+
+.btn-action img {
+    border: 2px solid #00AC9A;
+    width: 55px;
+}
+
+.btn-action:hover {
+    box-shadow: 3px 3px 5px 0 #4645456e;
+}
+
+.prop2 {
+    display: none;
+}
+
+.img_frame {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.img_frame img {
+    height: inherit;
+    display: table;
+    margin: auto;
+    filter: grayscale(0) !important;
+    transition: all .5s;
+}
+
+.img_frame img:hover {
+    transform: scale(1.1);
+}
+
+.btn-img {
+    width: 15%;
+    max-height: 100px;
+    border: 2px solid #00AC9A;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.btn-img img {
+    width: 100%;
+    height: inherit;
+    display: table;
+    margin: auto;
+    transition: all .5s;
+}
+
+.btn-img:hover>img {
+    transform: scale(1.1);
+}
+
+.text-primary {
+    color: #00AC9A !important;
 }
