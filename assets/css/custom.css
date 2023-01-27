@@ -133,3 +133,37 @@
 .text-primary {
     color: #00AC9A !important;
 }
+
+.img-number {
+    background-color: #00AC9A;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 100px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.hint {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    background: #2793eb6b;
+    color: #000000;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}

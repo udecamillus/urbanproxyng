@@ -129,6 +129,7 @@ require_once(APP_HEADER);
 
                     <?php
                     }
+
                 } else {
                     ?>
 
@@ -141,6 +142,8 @@ require_once(APP_HEADER);
 
                 <?php
                 }
+
+                closeConn();
                 ?>
 
             </div>

@@ -285,3 +285,15 @@ function uploadImages($move_to_location)
 
     return $images;
 }
+
+// get cover image for each post 
+function coverImage($image){
+  $images = explode(',',$image);
+    return $images[0];
+}
+
+// get number of images uploaded in post
+function imgCount($img){
+    $imgs = explode(',',$img);
+    return count($imgs);
+}

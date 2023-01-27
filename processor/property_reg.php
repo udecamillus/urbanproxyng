@@ -29,5 +29,6 @@ if($_POST['action'] == 'add property'){
 
         setAlert('Success','property registered successfully','green','ico-success');
         redirect(ROOT."app/store");
+        closeConn();
     }
 }
