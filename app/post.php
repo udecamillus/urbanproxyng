@@ -39,7 +39,7 @@ require_once(APP_HEADER);
                                     </div>
 
                                     <div class="col-md-6 col-lg-4  p-3">
-                                        <a href="" class="d-flex align-items-center btn-action">
+                                        <a href="<?=APP_ROOT?>automotive" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/automotive.jpg" class="rounded-circle" alt="">
                                             </div>
