@@ -63,7 +63,7 @@ require_once(APP_HEADER);
                                     </div>
 
                                     <div class="col-md-6 col-lg-4  p-3">
-                                        <a href="" class="d-flex align-items-center btn-action">
+                                        <a href="<?=APP_ROOT?>computer" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/computer.jpg" class="rounded-circle" alt="">
                                             </div>
@@ -75,7 +75,7 @@ require_once(APP_HEADER);
                                     </div>
 
                                     <div class="col-md-6 col-lg-4  p-3">
-                                        <a href="" class="d-flex align-items-center btn-action">
+                                        <a href="<?=APP_ROOT?>home_&_furniture" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/furniture.jpg" class="rounded-circle" alt="">
                                             </div>
@@ -87,7 +87,7 @@ require_once(APP_HEADER);
                                     </div>
 
                                     <div class="col-md-6 col-lg-4  p-3">
-                                        <a href="" class="d-flex align-items-center btn-action">
+                                        <a href="<?=APP_ROOT?>phone_&_tablet" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/phones.jpg" class="rounded-circle" alt="">
                                             </div>
@@ -99,7 +99,7 @@ require_once(APP_HEADER);
                                     </div>
 
                                     <div class="col-md-6 col-lg-4  p-3">
-                                        <a href="" class="d-flex align-items-center btn-action">
+                                        <a href="<?=APP_ROOT?>accessories" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/accesories.jpg" class="rounded-circle" alt="">
                                             </div>
