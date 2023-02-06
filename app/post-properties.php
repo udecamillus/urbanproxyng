@@ -130,11 +130,19 @@ require_once(APP_HEADER);
                                         </div>
 
                                         <div class="col-md-6 col-lg-4  p-3">
+                                            <label for="" class="form-label">Contact number <small class="text-muted">(For easy contact, add a WhatApp number)</small></label>
+                                            <select name="contact_number" id="" class="form-control form-control-lg">
+                                                <option value="<?= $phone ?>"><?= $phone ?></option>
+                                                <option value="<?=$phone_2?>"><?=$phone_2?></option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-8 p-3">
                                             <label for="" class="form-label">Facilities <small class="text-muted">(separate with comer)</small></label>
                                             <textarea name="facilities" id="" cols="30" rows="5" class="form-control form-control-lg" aria-placeholder="" placeholder="Personal transformer, car park, swimming pool"></textarea>
                                         </div>
 
-                                        <div class="col-md-12 col-lg-10  p-3">
+                                        <div class="col-md-12 col-lg-12 p-3">
                                             <label for="" class="form-label">Description <small class="text-muted">(full description of property)</small></label>
                                             <textarea name="description" id="" cols="30" rows="10" class="form-control form-control-lg"></textarea>
                                         </div>

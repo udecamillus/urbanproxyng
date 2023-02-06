@@ -23,7 +23,7 @@ require_once(HEADER);
         <!-- start: page body -->
         <div class="mt-5">
             <div class="container-fluid">
-                <div class="row g-3">
+                <div class="row g-3 d-block">
                     <?php
                     $sql = $conn->query("SELECT * from posts WHERE prop_state='active'");
                     if ($sql->num_rows > 0) {
@@ -33,7 +33,7 @@ require_once(HEADER);
                             extract($data);
 
                     ?>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6 float">
                                 <a href="<?= ROOT ?>view?prop=<?= $prop_id ?>">
                                     <div class="card">
                                         <div class="card-body">
@@ -43,15 +43,15 @@ require_once(HEADER);
                                                 <span class="img-number"><?= imgCount($images) ?></span>
                                             </div>
                                             <div>
-                                                <h4 class="mt-4 text-main">#<?= number_format($price, 2) ?></h4>
-                                                <h5 class=""><?= $prop_title ?></h5>
+                                                <h4 class="mt-4 text-main post-price">#<?= number_format($price, 2) ?></h4>
+                                                <h5 class="post-title"><?= $prop_title ?></h5>
 
                                             </div>
 
-                                            <div class="d-flex g-3 justify-content-between">
-                                                <span class="hint"><?= $prop_type ?></span>
-                                                <span class="hint"><?= $city ?></span>
-                                                <span class="hint"><?= $furnishing ?></span>
+                                            <div class="xtr">
+                                                <span><?= $prop_type ?></span>
+                                                <span><?= $city ?></span>
+                                                <span><?= $furnishing ?></span>
                                             </div>
                                         </div>
                                     </div>
@@ -60,6 +60,7 @@ require_once(HEADER);
 
                     <?php
                         }
+                    }else{
                         echo "<p class='text-center'>No Record found</p>";
                     }
                     ?>

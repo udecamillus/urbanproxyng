@@ -37,16 +37,16 @@ require_once(APP_HEADER);
                                     <div class="col-md-7 col-lg-8">
 
                                         <div class="img_frame">
-                                            <img src="<?= ROOT ?>uploads/posts/<?= $img[0] ?>" alt="" id="set_image<?=$sn?>">
+                                            <img src="<?= ROOT ?>uploads/posts/<?= $img[0] ?>" alt="" id="set_image<?= $sn ?>">
                                         </div>
 
-                                        <div class="d-flex justify-content-between mt-5">
+                                        <div class="d-flex mt-4">
                                             <?php
                                             for ($i = 0; $i < count($img); $i++) {
                                             ?>
 
-                                                <div class="btn-img">
-                                                    <img src="<?= ROOT ?>uploads/posts/<?= $img[$i] ?>" id="img<?= $i.$sn?>" alt="" onclick="image_changer('#img<?= $i.$sn ?>','#set_image<?=$sn?>')">
+                                                <div class="btn-img m-1">
+                                                    <img src="<?= ROOT ?>uploads/posts/<?= $img[$i] ?>" id="img<?= $i . $sn ?>" alt="" onclick="image_changer('#img<?= $i . $sn ?>','#set_image<?= $sn ?>')">
                                                 </div>
 
 
@@ -56,9 +56,13 @@ require_once(APP_HEADER);
 
                                         </div>
 
-                                        <h2 class="text-primary text-capitalize mt-3"><?= $prop_title ?>
-                                            <br> <small class="text-muted">#<?= number_format($price, 2) ?> <sub>(<?= $pattern ?>)</sub></small>
+                                        <h2 class="text-primary text-capitalize mt-3">
+                                            <small class="">#<?= number_format($price, 2) ?> </small>
+                                            <span class="bg-info fs-6 rounded text-white pr-1 pl-1"><?= $pattern ?></span>
                                         </h2>
+                                        <h5>
+                                            <?= $prop_title ?>
+                                        </h5>   
 
                                     </div>
 
@@ -129,7 +133,6 @@ require_once(APP_HEADER);
 
                     <?php
                     }
-
                 } else {
                     ?>
 

@@ -36,20 +36,18 @@ require_once(HEADER);
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-7 col-lg-8">
-
                                 <div class="img_frame">
                                     <img src="<?= ROOT ?>uploads/posts/<?= $img[0] ?>" alt="" id="set_image<?= $sn ?>">
                                 </div>
 
-                                <div class="d-flex justify-content-between mt-5">
+                                <div class="d-flex mt-4">
                                     <?php
                                     for ($i = 0; $i < count($img); $i++) {
                                     ?>
 
-                                        <div class="btn-img">
+                                        <div class="btn-img m-1">
                                             <img src="<?= ROOT ?>uploads/posts/<?= $img[$i] ?>" id="img<?= $i . $sn ?>" alt="" onclick="image_changer('#img<?= $i . $sn ?>','#set_image<?= $sn ?>')">
                                         </div>
-
 
                                     <?php
                                     }
@@ -65,6 +63,16 @@ require_once(HEADER);
                                     <?= $prop_title ?>
                                 </h5>
 
+                                <div class="row mt-4">
+                                    <div class="col-lg-4">
+                                        <a href="callto:<?= $contact_number ?>" target="_blank" class="btn btn-st text-center d-block"><i class="fa fa-phone" aria-hidden="true"></i> Call Owner (<?= $contact_number ?>)</a>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <a href="https://wa.me/<?= $contact_number ?>?text=I%20intrested%20in%20a%20property%20you%20posted%20on%20Urbanproxyng,%20please%20tell%20me%20more%20about%20the%20property%0AId:%20<?= $prop_id ?>%0Aref:%20https://www.urbanproxyng/view?prop=<?= $prop_id ?>" target="_blank" class="btn btn-st text-center d-block"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -135,8 +143,8 @@ require_once(HEADER);
                             </div>
                         </div>
 
-                        <h5 class="d-inline-block p-1 rounded text-white bg-light-primary mt-5">View property on map</h5>
-                        <!-- <div class="mapouter">
+                        <!-- <h5 class="d-inline-block p-1 rounded text-white bg-light-primary mt-5">View property on map</h5>
+                        <div class="mapouter">
                             <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=<?= $address ?>&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
                             </div>

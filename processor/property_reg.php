@@ -25,7 +25,7 @@ if($_POST['action'] == 'add property'){
     if ($prop_type == 'land') {
         # code...
     }else{
-        $sql = $conn ->query("INSERT INTO posts (post_type,prop_id, prop_state, prop_type, prop_title, bedroom, bathroom, seating_room, city, address, status, furnishing, legal, agent, price, pattern, facilities, description, user_tag, images, date) VALUES ('property','$prop_id', 'active', '$prop_type', '$prop_title', '$bedroom', '$bathroom', '$seating_room', '$city', '$address', '$status', '$furnishing', '$legal', '$agent', '$price', '$pattern', '$facilities', '$description', '$user_tag', '$images', '$date')");
+        $sql = $conn ->query("INSERT INTO posts (post_type,prop_id, prop_state, prop_type, prop_title, bedroom, bathroom, seating_room, city, address, status, furnishing, legal, agent, price, pattern, facilities, description, user_tag, images, date,contact_number) VALUES ('property','$prop_id', 'active', '$prop_type', '$prop_title', '$bedroom', '$bathroom', '$seating_room', '$city', '$address', '$status', '$furnishing', '$legal', '$agent', '$price', '$pattern', '$facilities', '$description', '$user_tag', '$images', '$date','$contact_number')");
 
         setAlert('Success','property registered successfully','green','ico-success');
         redirect(ROOT."app/store");
