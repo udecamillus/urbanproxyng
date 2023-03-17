@@ -105,17 +105,17 @@ require_once(APP_HEADER);
 
                                         <div class="col-md-6 col-lg-4  p-3">
                                             <label for="" class="form-label">Legal and Agreement Fee</label>
-                                            <input type="number" name="legal" class="form-control form-control-lg" placeholder="#000,000.00">
+                                            <input type="number" name="legal" class="form-control form-control-lg" placeholder="₦000,000.00">
                                         </div>
 
                                         <div class="col-md-6 col-lg-4  p-3">
                                             <label for="" class="form-label">Agency Fee</label>
-                                            <input type="number" name="agent" class="form-control form-control-lg" placeholder="#000,000.00">
+                                            <input type="number" name="agent" class="form-control form-control-lg" placeholder="₦000,000.00">
                                         </div>
 
                                         <div class="col-md-6 col-lg-4  p-3">
                                             <label for="" class="form-label">Price</label>
-                                            <input type="number" name="price" class="form-control form-control-lg" placeholder="#000,000.00">
+                                            <input type="number" name="price" class="form-control form-control-lg" placeholder="₦000,000.00">
                                         </div>
 
                                         <div class="col-md-6 col-lg-4  p-3">

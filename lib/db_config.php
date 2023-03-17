@@ -1,8 +1,8 @@
 <?php
-define('HOST','127.0.0.1');
-define('DBNAME', 'urbanproxy');
+define('HOST','localhost');
+define('DBNAME', 'urbanproxy'); 
 define('USERNAME','root');
-define('PASSWORD','');
+define('PASSWORD','root'); // dN,[K@=$4qXh
 
 // Create connection
 $conn = new mysqli(HOST,USERNAME,PASSWORD,DBNAME);

@@ -43,7 +43,7 @@ require_once(HEADER);
                                                 <span class="img-number"><?= imgCount($images) ?></span>
                                             </div>
                                             <div>
-                                                <h4 class="mt-4 text-main post-price">#<?= number_format($price, 2) ?></h4>
+                                                <h4 class="mt-4 text-main post-price">₦<?= number_format($price, 2) ?></h4>
                                                 <h5 class="post-title"><?= $prop_title ?></h5>
 
                                             </div>

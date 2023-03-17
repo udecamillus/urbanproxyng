@@ -20,135 +20,59 @@ require_once(APP_HEADER);
         <!-- start: page body -->
         <div class="page-body px-xl-4 px-sm-2 px-0 py-lg-2 py-1 mt-3">
             <div class="container-fluid">
+                <div class="row">
+                    <?php
+                    $sql = $conn->query("SELECT * from posts WHERE prop_state='active' AND user_tag = '$tag' ORDER BY p_id DESC LIMIT 50 ");
+                    if ($sql->num_rows > 0) {
+                        $sn = 0;
+                        while ($data = $sql->fetch_assoc()) {
+                            $sn++;
+                            extract($data);
 
-                <?php
-                $sql = $conn->query("SELECT * FROM posts WHERE user_tag = '$tag'");
-                if ($sql->num_rows > 0) {
-                    $sn = 0;
-                    while ($data = $sql->fetch_assoc()) {
-                        $sn++;
-                        extract($data);
-                        $img = explode(',', $images);
-                ?>
+                    ?>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6 float">
+                                <a href="<?= APP_ROOT ?>viewpost?prop=<?= $prop_id ?>">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div>
+                                                <img src="<?= ROOT ?>uploads/posts/<?= coverImage($images); ?>" width="100%" alt="">
 
-                        <div class="card mb-5">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-7 col-lg-8">
+                                                <span class="img-number"><?= imgCount($images) ?></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="mt-4 text-main post-price">₦<?= number_format($price, 2) ?></h4>
+                                                <h5 class="post-title"><?= $prop_title ?></h5>
 
-                                        <div class="img_frame">
-                                            <img src="<?= ROOT ?>uploads/posts/<?= $img[0] ?>" alt="" id="set_image<?= $sn ?>">
+                                            </div>
+
+                                            <div class="xtr">
+                                                <span><?= $prop_type ?></span>
+                                                <span><?= $city ?></span>
+                                                <span><?= $furnishing ?></span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mt-4 xtr">Views <span class="text-white bold-p"><?= views($prop_id) ?></span></p>
+
+                                                <p class="mt-4 xtr">Callbacks <span class="text-white bold-p"><?= propCallBack($prop_id) ?></span></p>
+                                            </div>
                                         </div>
-
-                                        <div class="d-flex mt-4">
-                                            <?php
-                                            for ($i = 0; $i < count($img); $i++) {
-                                            ?>
-
-                                                <div class="btn-img m-1">
-                                                    <img src="<?= ROOT ?>uploads/posts/<?= $img[$i] ?>" id="img<?= $i . $sn ?>" alt="" onclick="image_changer('#img<?= $i . $sn ?>','#set_image<?= $sn ?>')">
-                                                </div>
-
-
-                                            <?php
-                                            }
-                                            ?>
-
-                                        </div>
-
-                                        <h2 class="text-primary text-capitalize mt-3">
-                                            <small class="">#<?= number_format($price, 2) ?> </small>
-                                            <span class="bg-info fs-6 rounded text-white pr-1 pl-1"><?= $pattern ?></span>
-                                        </h2>
-                                        <h5>
-                                            <?= $prop_title ?>
-                                        </h5>   
-
                                     </div>
-
-                                    <div class="col-md-5 col-lg-4">
-                                        <h4>Property Details:</h4>
-
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Property Type:</strong>
-                                            <span class="text-capitalize"><?= $prop_type ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Bedroom:</strong>
-                                            <span><?= $bedroom ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Bathroom:</strong>
-                                            <span><?= $bathroom ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Seating Rooms:</strong>
-                                            <span><?= $seating_room ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Location:</strong>
-                                            <span class="text-capitalize"><?= $city ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Property Status:</strong>
-                                            <span class="text-capitalize"><?= $status ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Furnishing:</strong>
-                                            <span class="text-capitalize"><?= $furnishing ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Legal:</strong>
-                                            <span class="text-capitalize">#<?= number_format($legal, 2) ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Agent:</strong>
-                                            <span class="text-capitalize">#<?= number_format($agent, 2) ?></span>
-                                        </p>
-
-                                        <p class="d-flex justify-content-between">
-                                            <strong>Facilities:</strong>
-                                            <span class="text-capitalize"><?= $facilities ?></span>
-                                        </p>
-
-                                        <p><Strong>Property Description</Strong> <br>
-                                            <?= $description ?>
-                                        </p>
-
-
-                                    </div>
-                                </div>
-
+                                </a>
                             </div>
-                        </div>
+
+                        <?php
+                        }
+                    } else {
+                        ?>
+
+                        <img src="<?= ROOT ?>assets/images/modals/modal-quote.svg" style="max-width: 300px;" class="m-auto d-table" alt="">
+                        <p class="text-center">Oops!, Looks like u don,t have any post yet</p>
 
                     <?php
                     }
-                } else {
                     ?>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="<?= ROOT ?>assets/images/modals/modal-quote.svg" style="max-width: 300px;" class="m-auto d-table" alt="">
-                            <p class="text-center">Oops!, Looks like u don,t have any post yet</p>
-                        </div>
-                    </div>
-
-                <?php
-                }
-
-                closeConn();
-                ?>
-
+                </div>
             </div>
         </div>
 
@@ -160,14 +84,6 @@ require_once(APP_HEADER);
     <?php require_once(APP_MODAL);
     require_once(APP_SCRIPT);
     ?>
-
-    <script>
-        function image_changer(source, target) {
-            var img = $(source).attr('src');
-            $(target).attr('src', img);
-        }
-    </script>
-
 
 </body>
 

@@ -5,9 +5,9 @@ define('SITE_URL','https://www.urbanproxyng.com');
 define('ROOT', '/urbanproxyng/'); //change to / when online.
 define('DR_ROOT', dirname(__FILE__));
 define('DS', DIRECTORY_SEPARATOR);
-define('LOGO',ROOT.'uploads/logo.png');
-define('ICON', ROOT . 'uploads/favicon.png');
-define('LOGOTEXT', ROOT . 'uploads/logo_text.png');
+define('LOGO',ROOT.'uploads/logo1.png');
+define('ICON', ROOT . 'uploads/logo1.png');
+define('LOGOTEXT', ROOT . 'uploads/logo1.png');
 
 // Main Page
 define('HEADER', DR_ROOT . DS . 'includes' . DS . 'header.php');

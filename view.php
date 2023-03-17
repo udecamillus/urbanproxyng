@@ -9,6 +9,7 @@ if (isset($_GET)) {
     $data = $sql->fetch_assoc();
     extract($data);
     $img = explode(',', $images);
+    viewedProperties($prop_id);
 } else {
     redirect(ROOT . 'home');
 }
@@ -56,20 +57,25 @@ require_once(HEADER);
                                 </div>
 
                                 <h2 class="text-primary text-capitalize mt-3">
-                                    <small class="">#<?= number_format($price, 2) ?> </small>
+                                    <small class="">₦<?= number_format($price, 2) ?> </small>
                                     <span class="bg-info fs-6 rounded text-white pr-1 pl-1"><?= $pattern ?></span>
                                 </h2>
                                 <h5>
                                     <?= $prop_title ?>
                                 </h5>
 
-                                <div class="row mt-4">
-                                    <div class="col-lg-4">
+                                <div class="row mt-2">
+                                    <div class="col-lg-4 mt-2">
                                         <a href="callto:<?= $contact_number ?>" target="_blank" class="btn btn-st text-center d-block"><i class="fa fa-phone" aria-hidden="true"></i> Call Owner (<?= $contact_number ?>)</a>
                                     </div>
 
-                                    <div class="col-lg-4">
-                                        <a href="https://wa.me/<?= $contact_number ?>?text=I%20intrested%20in%20a%20property%20you%20posted%20on%20Urbanproxyng,%20please%20tell%20me%20more%20about%20the%20property%0AId:%20<?= $prop_id ?>%0Aref:%20https://www.urbanproxyng/view?prop=<?= $prop_id ?>" target="_blank" class="btn btn-st text-center d-block"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+                                    <div class="col-lg-4 mt-2">
+                                        <a href="https://wa.me/<?= $contact_number ?>?text=I%20am%20interested%20in%20a%20property%20you%20posted%20on%20Urbanproxyng,%20please%20tell%20me%20more%20about%20the%20property%0AId:%20<?= $prop_id ?>%0Aref:%20https://www.urbanproxyng/view?prop=<?= $prop_id ?>" target="_blank" class="btn btn-st text-center d-block"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+                                    </div>
+
+                                    <div class="col-lg-8 mt-4">
+                                        <input type="text" id="callback_num" placeholder="Enter ur contact for callback" class="form-control">
+                                        <button id="callback" class="btn btn-st text-center d-block mt-2 form-control" >Request Callback</button>
                                     </div>
 
                                 </div>
@@ -117,12 +123,12 @@ require_once(HEADER);
 
                                 <p class="d-flex justify-content-between">
                                     <strong>Legal:</strong>
-                                    <span class="text-capitalize">#<?= number_format($legal, 2) ?></span>
+                                    <span class="text-capitalize">₦<?= number_format($legal, 2) ?></span>
                                 </p>
 
                                 <p class="d-flex justify-content-between">
                                     <strong>Agent:</strong>
-                                    <span class="text-capitalize">#<?= number_format($agent, 2) ?></span>
+                                    <span class="text-capitalize">₦<?= number_format($agent, 2) ?></span>
                                 </p>
 
                                 <p class="d-flex justify-content-between">
@@ -143,26 +149,17 @@ require_once(HEADER);
                             </div>
                         </div>
 
-                        <!-- <h5 class="d-inline-block p-1 rounded text-white bg-light-primary mt-5">View property on map</h5>
+                        <h5 class="d-inline-block p-1 rounded text-white bg-light-primary mt-5">View property on map</h5>
                         <div class="mapouter">
                             <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=<?= $address ?>&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
                             </div>
-                        </div> -->
+                        </div>
 
 
                     </div>
                 </div>
 
-
-                <!--                  
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="<?= ROOT ?>assets/images/modals/modal-quote.svg" style="max-width: 300px;" class="m-auto d-table" alt="">
-                            <p class="text-center">Oops!, Looks like u don,t have any post yet</p>
-                        </div>
-                    </div> -->
 
                 <?php
                 closeConn();
@@ -181,10 +178,25 @@ require_once(HEADER);
     ?>
 
     <script>
-        function image_changer(source, target) {
-            var img = $(source).attr('src');
-            $(target).attr('src', img);
-        }
+      
+        $("#callback").click(function(e) {
+            e.preventDefault();
+            var btn = $('#callback');
+            loader(btn, 'show');
+            $.post("<?= ROOT ?>processor/quickActions.php", {
+                callback_number: $('#callback_num').val(),
+                prop: <?=$prop_id?>,
+                owner: '<?=$user_tag?>',
+                action: 'callBack'
+            }, function(data) {
+                if (data === 'success') {
+                    toastAlert('Success', 'Call Back Request Sent', 'green', 'ico-success');
+                } else {
+                    toastAlert('Error', data, 'red', 'ico-error');
+                }
+                loader(btn, 'hide');
+            });
+        });
     </script>
 
 

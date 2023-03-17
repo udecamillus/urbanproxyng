@@ -185,3 +185,31 @@
 .bg-info {
     padding: 0 5px;
 }
+
+.fill {
+    display: block;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: inset 1px 1px 5px 0px #000000, 1px 1px 5px 0px #000000;
+    color: #ffffff;
+}
+
+.nav-btn {
+    padding: 10px;
+    background: #00AC9A;
+    transition: all .5s;
+}
+
+.nav-btn:hover {
+    background: #2794EB;
+}
+
+.hide {
+    display: none;
+}
+
+.bold-p {
+    font-size: 14px !important;
+}

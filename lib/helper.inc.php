@@ -95,6 +95,7 @@ function validateEmail($email)
 // validate any nigerian number
 function validatePhoneNumber($phone_number)
 {
+
     $num = str_replace([' ', '+', '-'], ['', '', ''], $phone_number);
 
     if (strlen($num) == 11 || strlen($num) == 13) {
@@ -258,7 +259,7 @@ function uploadImages($move_to_location)
             // dnd($locate);
 
             if (in_array($file_extension, $white_list)) {
-               
+
                 if (!$f_error) {
                     $move_f = move_uploaded_file($f_tmp, $locate);
 
@@ -280,20 +281,96 @@ function uploadImages($move_to_location)
                 redirect(ROOT . 'app/post-properties');
             }
         }
-
     }
 
     return $images;
 }
 
 // get cover image for each post 
-function coverImage($image){
-  $images = explode(',',$image);
+function coverImage($image)
+{
+    $images = explode(',', $image);
     return $images[0];
 }
 
 // get number of images uploaded in post
-function imgCount($img){
-    $imgs = explode(',',$img);
+function imgCount($img)
+{
+    $imgs = explode(',', $img);
     return count($imgs);
+}
+
+// mark property as seen
+function viewedProperties($prop_id)
+{
+    global $conn;
+    if (!isset($_COOKIE["id_$prop_id"])) {
+        $view_id = "id_$prop_id";
+        if ($conn->query("UPDATE posts SET views = views + 1  WHERE prop_id = '$prop_id'") === TRUE) {
+            setcookie($view_id, $prop_id, time() + 7776000, 'view.php');
+        } 
+    }
+    return;
+}
+
+// fetch user post callback request 
+function callBack($owner)
+{
+    global $conn;
+    $data = $conn->query("SELECT * FROM callbacks WHERE prop_owner = '$owner'");
+    if ($data->num_rows > 0) {
+        return $data->num_rows;
+    } else {
+        return 'no';
+    }
+}
+
+// fetch user number of posts
+function numPosts($user)
+{
+    global $conn;
+    $data = $conn->query("SELECT * FROM posts WHERE user_tag = '$user'");
+
+    return $data->num_rows;
+}
+
+// fetch number of items sold by user 
+function numSold($user)
+{
+    global $conn;
+    $data = $conn->query("SELECT sales FROM accounts WHERE tag = '$user'");
+    if ($data->num_rows > 0) {
+       extract($data->fetch_assoc());
+       return $sales;
+    } else {
+        return 0;
+    }
+}
+
+// fetch number of Blocked Post
+function blockedPost($user)
+{
+    global $conn;
+    $data = $conn->query("SELECT * FROM posts WHERE prop_state = 'blocked' AND user_tag = '$user'");
+    return $data->num_rows;
+}
+
+// get number of views a post has
+function views($prop_id){
+    global $conn;
+    $data = $conn->query("SELECT views FROM posts WHERE prop_id = '$prop_id'");
+    if($data->num_rows > 0){
+        extract($data -> fetch_assoc());
+        return $views;
+    }else{
+        return 0;
+    }
+}
+
+// get number of callbacks a post has
+function propCallBack($prop_id)
+{
+    global $conn;
+    $data = $conn->query("SELECT * FROM callbacks WHERE call_prop = '$prop_id'");
+    return $data->num_rows;
 }

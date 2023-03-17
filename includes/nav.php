@@ -43,8 +43,8 @@
                          </a>
                          <div class="dropdown-menu border-0 rounded-4 shadow p-0">
                              <div class="card border-0 w240">
-                                 <a href="<?= ROOT ?>app/register" class="btn btn-st bg-secondary text-light text-uppercase rounded-0">Register</a>
-                                 <a href="<?= ROOT ?>app/login" class="btn btn-st bg-secondary text-light text-uppercase rounded-0">Sign In</a>
+                                 <a href="<?= ROOT ?>app/register" class="nav-btn text-light text-uppercase rounded-0">Register</a>
+                                 <a href="<?= ROOT ?>app/login" class="nav-btn text-light text-uppercase rounded-0">Sign In</a>
                              </div>
                          </div>
                      </div>

@@ -50,7 +50,7 @@ require_once(APP_HEADER);
                                         </a>
                                     </div>
 
-                                    <div class="col-md-6 col-lg-4  p-3">
+                                    <!-- <div class="col-md-6 col-lg-4  p-3">
                                         <a href="<?=APP_ROOT?>fashion" class="d-flex align-items-center btn-action">
                                             <div class="col-sm-3 rounded-circle">
                                                 <img src="<?= ROOT ?>uploads/icon/fashion.jpg" class="rounded-circle" alt="">
@@ -108,7 +108,7 @@ require_once(APP_HEADER);
                                                 <small class="text-muted text-break">Charger, Headphones, Cases, Protectors.</small>
                                             </div>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                 </div>
                             </div>

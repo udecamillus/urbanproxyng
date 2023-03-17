@@ -47,6 +47,16 @@ function showPas() {
     }
 }
 
+// change post images 
+function image_changer(source, target) {
+    var img = $(source).attr('src');
+    $(target).attr('src', img);
+}
+
+// show callback list
+function toggle_display(elem) {
+    $(elem).toggle(500);
+}
 
 // iziToast alert default settings
 iziToast.settings({

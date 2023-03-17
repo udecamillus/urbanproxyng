@@ -11,7 +11,7 @@ require_once(APP_APP_ROOT . DS . 'includes' . DS . 'header.php')
                 <div class="row">
                     <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
                         <div style="max-width: 25rem;">
-                            <div class="mb-4"><img src="<?= ROOT ?>uploads/logo.svg" alt=""></div>
+                            <div class="mb-4"><img src="<?= LOGO ?>" width="100%" alt=""></div>
                             <div class="mb-5 text-center">
                                 <h2 class="color-900 text-center">Login</h2>
                             </div>
@@ -23,7 +23,7 @@ require_once(APP_APP_ROOT . DS . 'includes' . DS . 'header.php')
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
                         <div class="card shadow-sm w-100 p-4 p-md-5 login-side" style="max-width: 32rem;">
                             <form class="row g-3">
-                                <div class="col-12 text-center mb-5"><img src="<?= ROOT ?>uploads/logo.svg" style="max-width: 80px;" class="d-lg-none mb-4" alt="">
+                                <div class="col-12 text-center mb-5"><img src="<?= LOGO ?>" style="max-width: 80px;" class="d-lg-none mb-4" alt="">
                                     <h1>Login</h1><span class="">Don't have an account? <a href="register">register Now</a></span>
                                 </div>
                                 <div class="col-12">
