@@ -24,7 +24,7 @@ require_once(APP_APP_ROOT . DS . 'includes' . DS . 'header.php')
                         <div class="card shadow-sm w-100 p-4 p-md-5 login-side" style="max-width: 32rem;">
                             <form class="row g-3">
                                 <div class="col-12 text-center mb-5"><img src="<?= LOGO ?>" style="max-width: 80px;" class="d-lg-none mb-4" alt="">
-                                    <h1>Login</h1><span class="">Don't have an account? <a href="register">register Now</a></span>
+                                    <h1>Login</h1><span class="">Don't have an account? <a href="register">Register Now</a></span>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-2"><label class="form-label">Email/Phone</label><input type="text" class="form-control form-control-lg" id="email_phone" placeholder="Enter registered email or phone"></div>

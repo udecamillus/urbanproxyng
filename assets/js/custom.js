@@ -58,6 +58,19 @@ function toggle_display(elem) {
     $(elem).toggle(500);
 }
 
+$('#themeMode').click(function(e) {
+    e.preventDefault();
+    theme = $('#myTheme');
+    if (theme.val() != 'light') {
+        theme.attr('data-theme', 'dark');
+        theme.val('light');
+    } else {
+        theme.attr('data-theme', 'light');
+        theme.val('');
+    }
+
+});
+
 // iziToast alert default settings
 iziToast.settings({
     id: null,

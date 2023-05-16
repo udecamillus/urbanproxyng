@@ -60,7 +60,7 @@ require_once(HEADER);
 
                     <?php
                         }
-                    }else{
+                    } else {
                         echo "<p class='text-center'>No Record found</p>";
                     }
                     ?>

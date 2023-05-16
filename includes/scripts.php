@@ -17,6 +17,7 @@
  </script>
 
  <script>
+    
      // date range picker
      $(function() {
          $('input[name="daterange"]').daterangepicker({

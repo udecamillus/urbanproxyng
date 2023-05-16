@@ -213,3 +213,8 @@
 .bold-p {
     font-size: 14px !important;
 }
+
+footer {
+    display: block;
+    clear: both;
+}

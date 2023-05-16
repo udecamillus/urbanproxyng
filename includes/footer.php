@@ -5,10 +5,10 @@
             <img src="<?=LOGO?>" width="50px" alt="">
          </a>
          <ul class="nav col-md-4 justify-content-center justify-content-lg-end">
-             <li class="nav-item"><a href="https://themeforest.net/user/wrraptheme/portfolio" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
-             <li class="nav-item"><a href="https://themeforest.net/licenses/standard" target="_blank" class="nav-link px-2 text-muted">licenses</a></li>
-             <li class="nav-item"><a href="https://help.market.envato.com/hc/en-us" target="_blank" class="nav-link px-2 text-muted">Support</a></li>
-             <li class="nav-item"><a href="https://themeforest.net/licenses/faq" target="_blank" class="nav-link px-2 text-muted">FAQs</a></li>
+             <!-- <li class="nav-item"><a href="https://themeforest.net/user/wrraptheme/portfolio" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
+             <li class="nav-item"><a href="https://themeforest.net/licenses/standard" target="_blank" class="nav-link px-2 text-muted">licenses</a></li> -->
+             <li class="nav-item"><a href="Support" target="_blank" class="nav-link px-2 text-muted">Support/contact</a></li>
+             <!-- <li class="nav-item"><a href="https://themeforest.net/licenses/faq" target="_blank" class="nav-link px-2 text-muted">FAQs</a></li> -->
          </ul>
      </div>
  </footer>

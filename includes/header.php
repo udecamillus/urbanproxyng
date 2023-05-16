@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="no-js " lang="en">
+<html class="no-js " lang="en" value="light" id="myTheme">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="description" content="Search and buy properties in nigeria,">
-    <meta name="keyword" content="properties, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme, HRMS, Projects"> -->
+    <meta name="description" content="Search and buy properties in nigeria,">
+    <meta name="keyword" content="properties, flats, land, hostel, duplex, bungalow">
     <title><?= SITE_NAME . ' | ' . $page_title ?></title>
     <link rel="shortcut icon" href="<?= ROOT ?>uploads/favicon.png" type="image/x-icon">
     <!-- Favicon-->
